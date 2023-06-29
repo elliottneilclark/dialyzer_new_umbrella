@@ -50,7 +50,10 @@ defmodule DialyzerNewWeb.MixProject do
       {:gettext, "~> 0.20"},
       {:dialyzer_new, in_umbrella: true},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+
+      # Added here
+      {:dialyxir, "~> 1.3", only: [:dev, :test], runtime: false}
     ]
   end
 
